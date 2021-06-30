@@ -1,1 +1,3 @@
-console.log("TODO");
+export default () => {
+  console.log("TODO");
+};
