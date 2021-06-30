@@ -1,10 +1,11 @@
 # Wouter Redux
 
-[Wouter](https://github.com/molefrog/wouter) is a minimalistic router for modern React.
+[Wouter Redux](https://github.com/tespkg/wouter-redux) puts the location
+history into Redux store so that browser location changes only responds to
+store changes so that you always get the current location in redux store.
 
-Wouter Redux puts the location history into Redux store so that browser
-location changes only responds to store changes so that you always get the
-current location in redux store.
+[Wouter](https://github.com/molefrog/wouter) is a minimalistic router for
+modern React.
 
 ## Why
 
