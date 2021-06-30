@@ -25,6 +25,7 @@
   "homepage": "https://github.com/tespkg/wouter-redux#readme",
   "scripts": {
     "test": "jest",
+    "format": "prettier --write 'src/**/*.[tj]s{x,}'",
     "build": "tsc",
     "publish-lib": "npm run build && npm publish",
     "publish-beta": "npm run build && npm publish --tag beta",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "jest": "^27.0.6",
+    "prettier": "^2.3.2",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.4"
   },

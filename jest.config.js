@@ -1,7 +1,6 @@
 module.exports = {
-  preset: "ts-jest",
+  preset: 'ts-jest',
   collectCoverage: true,
-  coverageProvider: "v8",
-  testEnvironment: "jsdom",
-};
-
+  coverageProvider: 'v8',
+  testEnvironment: 'jsdom',
+}

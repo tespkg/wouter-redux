@@ -1,3 +1,3 @@
 export default () => {
-  console.log("TODO");
-};
+  console.log('TODO')
+}
