@@ -1,0 +1,39 @@
+{
+  "name": "wouter-redux",
+  "version": "0.0.0",
+  "description": "Use redux state for wouter",
+  "license": "MIT",
+  "keywords": [
+    "router",
+    "wouter",
+    "redux",
+    "state",
+    "tiny"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tespkg/wouter-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tespkg/wouter-router/issues"
+  },
+  "homepage": "https://github.com/tespkg/wouter-router#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish-lib": "npm run build && npm publish",
+    "publish-beta": "npm run build && npm publish --tag beta",
+    "publish-dryrun": "npm run build && npm publish --dry-run"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.4"
+  },
+  "peerDependencies": {
+    "wouter": "^2.7.4"
+  }
+}
