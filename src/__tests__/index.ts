@@ -1,4 +1,4 @@
-import { act, renderHook } from '@testing-library/react-hooks'
+import { act, renderHook } from '@testing-library/react-hooks/dom'
 import { createStore } from 'redux'
 import { createWouterHook, reducer } from '../index'
 
