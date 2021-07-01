@@ -15,4 +15,34 @@ If you use redux and keep E.g. pagination outside of the redux state, you'll soo
 
 ## Usage
 
-TODO
+```typescript
+import { createWouterHook, reducer as routerReducer } from "wouter-redux";
+import { configureStore } from "@reduxjs/toolkit";
+
+const store = configureStore({
+  reducer: {
+    ...
+    router: routerReducer,
+  },
+});
+const useLocation = createWouterHook(store);
+function App() {
+  return (
+    <Provider store={store}>
+      <Router hook={useLocation}>
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/count/">
+          <Counter />
+        </Route>
+      </Router>
+    </Provider>
+  );
+}
+```
+
+## TODO
+
+- [ ] test
+- [ ] tag v1
