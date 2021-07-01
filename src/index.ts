@@ -33,17 +33,14 @@ const initialState: WouterState = {
   history: [],
 }
 
-export const reducer: Reducer = (
-  state: WouterState = initialState,
-  action: WouterAction & AnyAction,
-) => {
+export const reducer: Reducer<WouterState, AnyAction> = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_LOCATION:
       if (
         state.location.path !== action.payload.path ||
         state.location.search !== action.payload.search
       ) {
-        const location = action.payload
+        const location: WouterLocation = action.payload
         const history = [location, ...state.history]
         if (history.length > 20) {
           history.splice(20)

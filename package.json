@@ -1,6 +1,6 @@
 {
   "name": "wouter-redux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use redux state for wouter",
   "license": "MIT",
   "keywords": [
@@ -32,6 +32,7 @@
     "publish-dryrun": "npm run build && npm publish --dry-run"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.1",
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.11",
     "jest": "^27.0.6",

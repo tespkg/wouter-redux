@@ -44,5 +44,6 @@ function App() {
 
 ## TODO
 
-- [ ] test
+- [x] test
 - [ ] tag v1
+- [ ] handle replace in history
